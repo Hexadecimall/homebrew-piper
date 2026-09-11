@@ -3,24 +3,17 @@ class Piper < Formula
   homepage "https://github.com/Hexadecimall/piper"
   license "MIT"
 
-  bottle do
-    root_url "https://github.com/Hexadecimall/homebrew-piper/releases/download/v0.1.3"
-    rebuild 1
-    sha256 cellar: :any, arm64_sequoia: "ea61674bbc1a6de9dfbbc04782c49098e08724f96ae151c256e5cfdae8088bd8"
-    sha256 cellar: :any, x86_64_linux:  "33897aa5470a646e2dcb29566a75a6f847c9ab6aff53c5c26fb14a2cab16d6e7"
-  end
-
   depends_on "z3"
   depends_on "zstd"
 
   if OS.mac?
     depends_on arch: :arm64
-    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.3/piper-aarch64-macos-static-release"
-    sha256 "a0791808439a9ec934ac43221f6b0b52dc3f537c63ca50ce4f78eca83c2104f7"
+    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.4/piper-aarch64-macos-static-release"
+    sha256 "b2f492a6307e95ecb6ad4855aa5d3dd46ee2fc351c38db82afcbe2dfc7eedfa5"
   else
     depends_on arch: :x86_64
-    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.3/piper-x86_64-linux-static-release"
-    sha256 "a2a23582050e7fd687df4fb30f47eaf153f1bd6b23a14a8ce13b5f6ffe788442"
+    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.4/piper-x86_64-linux-static-release"
+    sha256 "ff4cf03bc923a0e48b18341c018a3ab9fd45feb8d4d9dbd1c4515bbc22c93640"
   end
 
   conflicts_with "piper-dynamic", because: "both install the piper command"
