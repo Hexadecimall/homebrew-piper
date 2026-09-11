@@ -7,7 +7,7 @@ class Piper < Formula
     root_url "https://github.com/Hexadecimall/homebrew-piper/releases/download/v0.1.3"
     rebuild 1
     sha256 cellar: :any, arm64_sequoia: "ea61674bbc1a6de9dfbbc04782c49098e08724f96ae151c256e5cfdae8088bd8"
-    sha256 cellar: :any, x86_64_linux: "33897aa5470a646e2dcb29566a75a6f847c9ab6aff53c5c26fb14a2cab16d6e7"
+    sha256 cellar: :any, x86_64_linux:  "33897aa5470a646e2dcb29566a75a6f847c9ab6aff53c5c26fb14a2cab16d6e7"
   end
 
   depends_on "z3"
