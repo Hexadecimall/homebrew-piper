@@ -7,12 +7,12 @@ class PiperDynamic < Formula
 
   if OS.mac?
     depends_on arch: :arm64
-    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.4/piper-aarch64-macos-dynamic-release"
-    sha256 "96671688e64d7fbca72e75c1ea24bc6adbdb8a2f8a919966d8302b6c79b4a1bb"
+    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.7/piper-aarch64-macos-dynamic-release"
+    sha256 "3f417a32956998954101930ec2144b53070be52958b1e61e3b7c193e0a7a10c9"
   else
     depends_on arch: :x86_64
-    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.4/piper-x86_64-linux-dynamic-release"
-    sha256 "8d706ee231bd356be8f4d35a8efeeda4cb9e7501f0bbea0ed3abb7e1a0241bdd"
+    url "https://github.com/Hexadecimall/piper/releases/download/v0.1.7/piper-x86_64-linux-dynamic-release"
+    sha256 "0a4878d1edb04093bf3cc5cebb7ecd777f7d309d04c21f368dc17c8529b54598"
   end
 
   conflicts_with "piper", because: "both install the piper command"
