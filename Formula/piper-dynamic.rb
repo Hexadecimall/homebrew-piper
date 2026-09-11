@@ -3,6 +3,13 @@ class PiperDynamic < Formula
   homepage "https://github.com/Hexadecimall/piper"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/Hexadecimall/homebrew-piper/releases/download/v0.1.3"
+    rebuild 1
+    sha256 cellar: :any, arm64_sequoia: "a8126c6cfac00e0d7af61607bebeecdc23eb696e9ce92cd4fe57afd6266a5d73"
+    sha256 cellar: :any, x86_64_linux: "25aba3ebddeb6dc1f7631490048c88888652b06fa06ada09348d92a8c51cacae"
+  end
+
   depends_on "llvm"
 
   if OS.mac?
