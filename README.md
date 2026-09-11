@@ -3,12 +3,14 @@
 Install the self-contained static build:
 
 ```sh
+brew trust Hexadecimall/piper
 brew install Hexadecimall/piper/piper
 ```
 
 Install the smaller build that uses Homebrew LLVM:
 
 ```sh
+brew trust Hexadecimall/piper
 brew install Hexadecimall/piper/piper-dynamic
 ```
 
