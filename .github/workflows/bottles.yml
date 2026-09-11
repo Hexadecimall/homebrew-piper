@@ -59,6 +59,11 @@ jobs:
         with:
           pattern: bottle-*
           merge-multiple: true
+      - name: Normalize bottle asset names
+        run: |
+          for asset in *--*.tar.gz; do
+            mv "$asset" "${asset/--/-}"
+          done
       - uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64
         with:
           tag_name: ${{ env.PIPER_BOTTLE_TAG }}
