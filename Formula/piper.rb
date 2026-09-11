@@ -3,6 +3,9 @@ class Piper < Formula
   homepage "https://github.com/Hexadecimall/piper"
   license "MIT"
 
+  depends_on "z3"
+  depends_on "zstd"
+
   if OS.mac?
     depends_on arch: :arm64
     url "https://github.com/Hexadecimall/piper/releases/download/v0.1.3/piper-aarch64-macos-static-release"
